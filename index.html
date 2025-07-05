@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Ultimate Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="score-board">
+            <div class="player-score">
+                <div class="score-label">You</div>
+                <div class="score-number" id="user-score">0</div>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="computer-score">
+                <div class="score-label">Computer</div>
+                <div class="score-number" id="comp-score">0</div>
+            </div>
+        </div>
+        
+        <div class="result-display">
+            <p id="result-text">Choose your weapon to start the battle!</p>
+        </div>
+        
+        <div class="choices-container">
+            <div class="choices-title">Make Your Move</div>
+            <div class="choices">
+                <div class="choice" id="rock" data-choice="rock">
+                    <div class="choice-icon">🪨</div>
+                    <div class="choice-name">Rock</div>
+                </div>
+                <div class="choice" id="paper" data-choice="paper">
+                    <div class="choice-icon">📄</div>
+                    <div class="choice-name">Paper</div>
+                </div>
+                <div class="choice" id="scissors" data-choice="scissors">
+                    <div class="choice-icon">✂️</div>
+                    <div class="choice-name">Scissors</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="battle-area" id="battle-area" style="display: none;">
+            <div class="battle-choices">
+                <div class="battle-choice player-choice">
+                    <div class="battle-label">You</div>
+                    <div class="battle-icon" id="player-battle-icon"></div>
+                </div>
+                <div class="battle-vs">⚔️</div>
+                <div class="battle-choice computer-choice">
+                    <div class="battle-label">Computer</div>
+                    <div class="battle-icon" id="computer-battle-icon"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-message" id="action-message">
+            Ready to dominate? Pick your weapon!
+        </div>
+        
+        <button class="reset-btn" id="reset-btn">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
